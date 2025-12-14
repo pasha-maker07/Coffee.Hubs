@@ -11,25 +11,25 @@ export default function App() {
     {
       title: 'Lihat Menu Kami',
       description: 'Jelajahi berbagai pilihan kopi dan makanan',
-      icon: <Menu className="w-6 h-6" />,
+      icon: <img src="/icons/soft-drink.png" alt="Fast Food Menu" className="w-6 h-6 object-contain" />,
       onClick: () => setShowComingSoon(true),
     },
     {
       title: 'Lokasi & Jam Operasional',
       description: 'Temukan kami dan waktu kunjungan',
-      icon: <MapPin className="w-6 h-6" />,
+      icon: <img src="/icons/maps-and-flags.png" alt="Map Location" className="w-6 h-6 object-contain" />,
       url: 'https://share.google/xMduyLx2axptAfC7z',
     },
     {
       title: 'Instagram',
       description: '@Coffee.Hubs - Ikuti perjalanan kopi kami',
-      icon: <Instagram className="w-6 h-6" />,
+      icon: <img src="/icons/instagram (2).png" alt="Instagram" className="w-6 h-6 object-contain" />,
       url: 'https://www.instagram.com/coffee.hubs/',
     },
     {
       title: 'Hubungi Kami',
       description: 'Pertanyaan atau catering khusus',
-      icon: <Phone className="w-6 h-6" />,
+      icon: <img src="/icons/whatsapp.png" alt="WhatsApp" className="w-6 h-6 object-contain" />,
       url: 'https://wa.me/6281380845684',
     },
   ];
@@ -147,8 +147,8 @@ export default function App() {
               </div>
             </nav> 
             <aside>
-              <p className="text-sm sm:text-base">© 2025 Kopi Modern. Dibuat dengan ❤️ dan ☕</p>
-              <p className="text-xs sm:text-sm opacity-70">Jl. Kopi Nikmat No. 123, Jakarta</p>
+              <p className="text-sm sm:text-base">© 2025 Coffee Hubs. Dibuat dengan ❤️ dan ☕</p>
+              <p className="text-xs sm:text-sm opacity-70">Icons by Freepik - Flaticon</p>
             </aside>
           </footer>
         </div>
