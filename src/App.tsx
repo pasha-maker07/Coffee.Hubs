@@ -2,17 +2,19 @@ import { useState } from 'react';
 import { CoffeeLink } from './components/CoffeeLink';
 import { ParticleBackground } from './components/ParticleBackground';
 import { ComingSoonPage } from './components/ComingSoonPage';
+import MenuList from './components/MenuList';
 import { Instagram, MapPin, Clock, Menu, Phone, Mail, Coffee } from 'lucide-react';
 
 export default function App() {
   const [showComingSoon, setShowComingSoon] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const links = [
     {
       title: 'Lihat Menu Kami',
       description: 'Jelajahi berbagai pilihan kopi dan makanan',
       icon: <img src="/icons/soft-drink.png" alt="Fast Food Menu" className="w-6 h-6 object-contain" />,
-      onClick: () => setShowComingSoon(true),
+      onClick: () => setShowMenu(true),
     },
     {
       title: 'Lokasi & Jam Operasional',
@@ -34,7 +36,24 @@ export default function App() {
     },
   ];
 
-  // Show Coming Soon page when user clicks "Lihat Menu Kami"
+  // Show Menu List when user clicks "Lihat Menu Kami"
+  if (showMenu) {
+    return (
+      <div className="relative">
+        <button 
+          onClick={() => setShowMenu(false)}
+          className="absolute top-4 left-4 z-50 btn btn-circle btn-ghost"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <MenuList />
+      </div>
+    );
+  }
+
+  // Show Coming Soon page when needed
   if (showComingSoon) {
     return <ComingSoonPage onBack={() => setShowComingSoon(false)} />;
   }

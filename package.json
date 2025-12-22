@@ -1,13 +1,14 @@
-
 {
   "name": "coffee-hubs",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "dependencies": {
+    "clsx": "^2.1.1",
     "lucide-react": "^0.487.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
