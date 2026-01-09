@@ -16,61 +16,61 @@ const MenuList: React.FC = () => {
   const [menuItems] = useState<MenuItem[]>([
     {
       id: 1,
-      title: 'Espresso',
-      description: 'Kopi murni dengan rasa yang kuat dan pekat, sempurna untuk memulai hari',
-      image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400',
-      price: 'Rp 15.000',
+      title: 'Golden',
+      description: 'Kopi espesso dengan campuran gula aren dan susu segar yang lembut',
+      image: '/image/17.png',
+      price: 'Rp 18.000',
       badge: 'BEST SELLER',
-      category: ['Coffee', 'Hot'],
+      category: ['Coffee', 'Hot','cold'],
       isNew: false
     },
     {
       id: 2,
-      title: 'Cappuccino',
-      description: 'Perpaduan sempurna espresso, susu, dan foam lembut dengan taburan cokelat',
-      image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400',
-      price: 'Rp 25.000',
-      category: ['Coffee', 'Hot'],
+      title: 'Pure',
+      description: 'Percampuran kopi espresso dengan susu segar tanpa tambahan gula',
+      image: '/image/COFFEE.HUBS (16 x 9 inci) (1).png',
+      price: 'Rp 15.000',
+      category: ['Coffee', 'Hot','cold'],
       isNew: false
     },
     {
       id: 3,
-      title: 'Caffe Latte',
-      description: 'Espresso dengan susu steamed yang creamy, cocok untuk pecinta kopi yang lembut',
-      image: 'https://images.unsplash.com/photo-1561882468-9110e03e0f78?w=400',
-      price: 'Rp 28.000',
-      badge: 'POPULAR',
-      category: ['Coffee', 'Hot'],
-      isNew: false
-    },
-    {
-      id: 4,
-      title: 'Iced Americano',
-      description: 'Espresso dengan air dingin dan es batu, sempurna untuk cuaca panas',
-      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400',
-      price: 'Rp 22.000',
-      category: ['Coffee', 'Cold'],
-      isNew: false
-    },
-    {
-      id: 5,
-      title: 'Croissant',
-      description: 'Pastry Perancis dengan lapisan renyah di luar dan lembut di dalam, fresh from oven',
-      image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400',
+      title: 'Coco',
+      description: 'Espresso dengan kelapa muda dan susu segar, memberikan rasa tropis yang unik',
+      image: '/image/COFFEE.HUBS (16 x 9 inci).png',
       price: 'Rp 18.000',
-      category: ['Pastry', 'Breakfast'],
+      badge: 'POPULAR',
+      category: ['Coffee', 'Hot', 'cold'],
       isNew: false
-    },
-    {
-      id: 6,
-      title: 'Matcha Latte',
-      description: 'Teh hijau Jepang premium dengan susu, kaya antioksidan dan rasa yang unik',
-      image: 'https://images.unsplash.com/photo-1536013564743-5e31c5b1ca4c?w=400',
-      price: 'Rp 30.000',
-      badge: 'NEW',
-      category: ['Non-Coffee', 'Hot'],
-      isNew: true
     }
+    // {
+    //   id: 4,
+    //   title: 'Iced Americano',
+    //   description: 'Espresso dengan air dingin dan es batu, sempurna untuk cuaca panas',
+    //   image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400',
+    //   price: 'Rp 12.000',
+    //   category: ['Coffee', 'Cold'],
+    //   isNew: false
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Croissant',
+    //   description: 'Pastry Perancis dengan lapisan renyah di luar dan lembut di dalam, fresh from oven',
+    //   image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400',
+    //   price: 'Rp 18.000',
+    //   category: ['Pastry', 'Breakfast'],
+    //   isNew: false
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Matcha Latte',
+    //   description: 'Teh hijau Jepang premium dengan susu, kaya antioksidan dan rasa yang unik',
+    //   image: 'https://images.unsplash.com/photo-1536013564743-5e31c5b1ca4c?w=400',
+    //   price: 'Rp 30.000',
+    //   badge: 'NEW',
+    //   category: ['Non-Coffee', 'Hot'],
+    //   isNew: true
+    // }
   ]);
 
   const handleMenuClick = (item: MenuItem) => {
