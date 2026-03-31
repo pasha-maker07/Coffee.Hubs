@@ -32,7 +32,7 @@ export default function App() {
       title: 'Hubungi Kami',
       description: 'Pertanyaan atau catering khusus',
       icon: <img src="/icons/whatsapp.png" alt="WhatsApp" className="w-6 h-6 object-contain" />,
-      url: 'https://wa.me/6281380845684',
+      url: 'https://wa.me/6285962872969',
     },
   ];
 
