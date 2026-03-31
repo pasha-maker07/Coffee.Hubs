@@ -5,6 +5,7 @@
 
   [build.environment]
     NPM_FLAGS = "--include=dev"
+    NPM_CONFIG_PRODUCTION = "false"
 
 # Redirect rules for SPA
 [[redirects]]
