@@ -190,7 +190,7 @@ export default function App() {
                 <Instagram className="w-6 h-6 group-hover:text-primary transition-colors" />
               </a>
               <a 
-                href="https://wa.me/6281380845684" 
+                href="https://wa.me/6285962872969" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost btn-circle btn-lg hover:bg-secondary/20 hover:scale-110 hover:rotate-12 transition-all duration-300 group"
